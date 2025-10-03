@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notaciones de Expresiones</title>
+    <link href="./css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="container mt-4">
+      <h1 class="text-primary">Conversión de Expresiones</h1>
+
+     <b></b> <label for="expressionInput" class="fs-4">
+        Ingresa una expresión matemática simple:
+      </label></b>
+      <input
+        type="text"
+        class="form-control fs-5"
+        id="expressionInput"
+        placeholder="Ej: (3+5)*2"
+      />
+      <button id="generateTreeBtn" class="btn btn-primary mt-3 w-100 fs-5">
+        Generar Notaciones
+      </button>
+
+      <!-- Aquí se mostrarán las notaciones -->
+      <div id="outputs" class="mt-4 p-3 border rounded bg-light"></div>
+    </div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
