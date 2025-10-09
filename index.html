@@ -3,31 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Notaciones de Expresiones</title>
-    <link href="./css/bootstrap/bootstrap.min.css" rel="stylesheet" />
-    <script src="./js/bootstrap.bundle.min.js"></script>
+    <title>Verificador de Palíndromos</title>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
   </head>
-  <body>
-    <div class="container mt-4">
-      <h1 class="text-primary">Conversión de Expresiones</h1>
-
-     <b></b> <label for="expressionInput" class="fs-4">
-        Ingresa una expresión matemática simple:
-      </label></b>
-      <input
-        type="text"
-        class="form-control fs-5"
-        id="expressionInput"
-        placeholder="Ej: (3+5)*2"
-      />
-      <button id="generateTreeBtn" class="btn btn-primary mt-3 w-100 fs-5">
-        Generar Notaciones
-      </button>
-
-      <!-- Aquí se mostrarán las notaciones -->
-      <div id="outputs" class="mt-4 p-3 border rounded bg-light"></div>
+  <body class="bg-light">
+    <div class="container d-flex flex-column justify-content-center align-items-center min-vh-100">
+      <div class="card p-4 shadow" style="max-width: 400px; width: 100%;">
+        <h1 class="text-center mb-4">¿Es palíndromo?</h1>
+        <input type="text" id="frase" class="form-control mb-3" placeholder="Ingresa una frase" />
+        <button class="btn btn-primary w-100" onclick="verificarPalindromo()">Verificar</button>
+        <div id="resultado" class="mt-3"></div>
+      </div>
     </div>
-
-    <script src="./js/main.js"></script>
+    <script src="js/boostrap/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
